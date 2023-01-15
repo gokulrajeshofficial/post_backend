@@ -7,7 +7,7 @@ exports.signupValidation = [
 ]
  
 exports.loginValidation = [
-     check('email', 'Please type a valid email').isEmail().normalizeEmail({ gmail_remove_dots: true }),
+     check('username', 'Please type a valid email').isEmail().normalizeEmail({ gmail_remove_dots: true }),
      check('password', 'Password must be 6 or more characters').isLength({ min: 6 })
  
 ]
